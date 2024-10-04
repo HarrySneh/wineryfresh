@@ -105,48 +105,42 @@
                         <h2>GET IN TOUCH</h2>
                         <p>No matter the season Grapeman Farms delivers quality grapes.</p>
                         
+
 <!-- modify this form HTML and place wherever you want your form -->
-<form id="contactForm" action="https://formbold.com/s/9xBJX" method="POST">
-    <input type="email" placeholder="Email" name="email">
-    <input type="text" placeholder="Subject" name="subject">
-    <textarea name="message" placeholder="Type your message"></textarea>
+<form action="https://formbold.com/s/9xBJX" method="POST">
+    <div class="col-md-12">
+    <div class="form-group">
+        <input type="email" placeholder="Email" name="email" class="form-control" id="email" required data-error="Please enter your email">
+        <div class="help-block with-errors"></div>
+    </div>
+    </div>
+
+    <div class="col-md-12">
+        <div class="form-group">
+            <input type="text" placeholder="Subject" name="subject" class="form-control" id="Subject" required data-error="Please enter the subject"/>
+            <div class="help-block with-errors"></div>
+        </div>
+        </div>
+
+        <div class="col-md-12">
+            <div class="form-group">
+                <textarea name="message" placeholder="Type your message" class="form-control" id="text" required data-error="Please enter your message"></textarea>
+                <div class="help-block with-errors"></div>
+            </div>
+            </div>
+    
+    
   
     <!-- your other form fields go here -->
-    <button type="submit">Send Message</button>
-
-
-    <div class="row">
-        <div class="col-md-12">
-            <div class="form-group">
-                <input type="text" class="form-control" id="name" name="subject" placeholder="Your Name" required data-error="Please enter your name">
-                <div class="help-block with-errors"></div>
-            </div>
-        </div>
-        <div class="col-md-12">
-            <div class="form-group">
-                <input type="email" placeholder="Your Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
-                <div class="help-block with-errors"></div>
-            </div>
-        </div>
-        <div class="col-md-12">
-            <div class="form-group">
-                <input type="text" class="form-control" id="subject" name="name" placeholder="Subject" required data-error="Please enter your Subject">
-                <div class="help-block with-errors"></div>
-            </div>
-        </div>
-        <div class="col-md-12">
-            <div class="form-group">
-                <textarea class="form-control" name="message" id="message" placeholder="Your Message" rows="4" data-error="Write your message" required></textarea>
-                <div class="help-block with-errors"></div>
-            </div>
-            <div class="submit-button text-center">
-                <button class="btn hvr-hover" id="submit" type="submit">Send Message</button>
-                <div id="msgSubmit" class="h3 text-center hidden"></div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
+    <div class="submit-button text-center">
+    <button class="btn hvr-hover" id="Submit" type="submit">Send Message</button>
     </div>
   </form>
+  
+  
+    
+       
+  
   
                        
                     </div>
